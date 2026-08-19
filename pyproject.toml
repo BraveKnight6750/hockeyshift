@@ -1,0 +1,25 @@
+[project]
+name = "hockeyshift"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "BraveKnight6750", email = "cody.trainer@Outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "requests>=2.34.2",
+    "textual>=8.2.8",
+    "textual-dev>=1.8.0",
+]
+
+[project.scripts]
+hockeyshift = "hockeyshift:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
